@@ -3,23 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Personal researcher website of Your Name — Computer Vision, Medical AI, and Machine Learning.">
-  <meta name="author" content="Your Name">
-  <title>Your Name — Researcher</title>
+  <meta name="description" content="Personal researcher website of Vu Van An — computer vision for biotechnology and biometrics.">
+  <meta name="author" content="Vu Van An">
+  <title>Vu Van An — Research Assistant</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header class="site-header">
     <div class="container nav-wrap">
-      <a class="brand" href="#home">Vu Van An</a>
-      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav">☰</button>
       <nav class="nav" id="nav">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#projects">Projects</a>
-        <a href="#news">News</a>
-        <a href="#cv">CV</a>
+        <a href="index.html" aria-current="page">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="publications.html">Publications</a>
+        <a href="projects.html">Projects</a>
+        <a href="awards.html">Awards</a>
       </nav>
     </div>
   </header>
@@ -27,194 +26,77 @@
   <main>
     <section class="hero" id="home">
       <div class="container hero-grid">
-        <div>
-          <p class="eyebrow">RESEARCHER · COMPUTER VISION · AI</p>
-          <h1>Building reliable AI for <span>real-world vision.</span></h1>
-          <p class="hero-text">
-            I am an early-career researcher working on computer vision,
-            medical AI, spatial transcriptomics, biometric recognition,
-            and 3D vision.
-          </p>
-          <div class="actions">
-            <a class="button primary" href="#research">Explore research</a>
-            <a class="button secondary" href="#publications">Publications</a>
-          </div>
+        <img class="avatar" src="assets/avatar.jpg" alt="Portrait of Vu Van An">
+        <div class="intro">
+          <h1>Vu Van An</h1>
+          <p class="role">Research Assistant · BKAI Lab</p>
+          <p class="role">Co-Founder · Hibiscus Co</p>
+          <p class="muted">Hanoi University of Science and Technology</p>
           <div class="socials">
             <a href="https://github.com/AnVuVa" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="https://scholar.google.com/" target="_blank" rel="noreferrer">Google Scholar</a>
-            <a href="mailto:your.email@example.com">Email</a>
+            <a href="https://www.linkedin.com/in/anvuva" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://orcid.org/0009-0004-4899-5892" target="_blank" rel="noreferrer">ORCID</a>
+            <a href="mailto:an.vuvan866@gmail.com">Email</a>
           </div>
-        </div>
-        <aside class="profile-card">
-          <div class="avatar-placeholder">YN</div>
-          <h2>Your Name</h2>
-          <p>Researcher / PhD Student</p>
-          <p class="muted">Your University · Your Lab</p>
-          <div class="profile-links">
-            <a href="#cv">Curriculum Vitae →</a>
-            <a href="https://github.com/AnVuVa" target="_blank" rel="noreferrer">GitHub →</a>
+          <div class="prose bio">
+            <p>
+              I am a third-year Computer Science student at Hanoi University of
+              Science and Technology (HUST), a Research Assistant at BKAI Lab, and
+              co-founder of Hibiscus Co. I build models
+              that learn complex interactions and extract features from biological
+              images, from predicting spatial gene expression in histology to
+              fingerprint recognition and presentation attack detection.
+            </p>
+            <p>
+              Beyond computer vision, I work with NLP, retrieval-augmented
+              generation (RAG), agentic AI, and evolutionary algorithms. My research
+              interests include 2D/3D computer vision, biometrics and biotechnology,
+              software optimization.
+            </p>
           </div>
-        </aside>
-      </div>
-    </section>
-
-    <section id="about">
-      <div class="container section-grid">
-        <div>
-          <p class="section-label">01 / ABOUT</p>
-          <h2>Research with an emphasis on useful, reproducible systems.</h2>
-        </div>
-        <div class="prose">
-          <p>
-            I work at the intersection of machine learning and computer vision,
-            with a focus on methods that remain useful beyond a single benchmark.
-            My current interests span medical image analysis, computational
-            pathology, spatial transcriptomics, biometric recognition, and
-            3D reconstruction.
-          </p>
-          <p>
-            I am particularly interested in representation learning, multimodal
-            reasoning, spatial context, robust evaluation, and efficient
-            architectures.
-          </p>
         </div>
       </div>
     </section>
 
     <section class="dark-section" id="research">
       <div class="container">
-        <p class="section-label">02 / RESEARCH</p>
         <div class="section-heading">
-          <h2>Research directions</h2>
-          <p>Selected areas rather than an exhaustive list.</p>
+          <h2>Research interests</h2>
         </div>
         <div class="research-grid">
           <article class="research-card">
-            <span class="number">01</span>
             <h3>Spatial Transcriptomics</h3>
             <p>
-              Histology-guided prediction of spatial gene expression using
-              morphology, spatial context, and biologically informed refinement.
+              Predicting spatial gene expression from histology images with
+              biology-guided, local–global residual propagation.
             </p>
-            <div class="tags"><span>Medical AI</span><span>Computational Pathology</span></div>
+            <div class="tags"><span>Biotechnology</span><span>Computational Pathology</span></div>
           </article>
           <article class="research-card">
-            <span class="number">02</span>
-            <h3>Biometric Recognition & PAD</h3>
+            <h3>Biometric Recognition &amp; PAD</h3>
             <p>
-              Unified representations for fingerprint identity recognition and
-              presentation attack detection.
+              Unified fingerprint recognition and presentation attack detection,
+              latent fingerprint restoration, and fast large-scale identification
+              with minutiae-free graph transformers.
             </p>
             <div class="tags"><span>Biometrics</span><span>Security</span></div>
           </article>
           <article class="research-card">
-            <span class="number">03</span>
             <h3>3D Computer Vision</h3>
             <p>
-              Dynamic scene reconstruction and neural rendering for challenging
-              endoscopic and deformable-tissue environments.
+              3D Gaussian Splatting for dynamic, deformable endoscopic scenes, and
+              for large-scene novel view synthesis from drone imagery.
             </p>
-            <div class="tags"><span>3DGS</span><span>Neural Rendering</span></div>
+            <div class="tags"><span>3DGS</span><span>Endoscopy</span></div>
           </article>
           <article class="research-card">
-            <span class="number">04</span>
-            <h3>Representation Learning</h3>
+            <h3>Evolutionary Computation</h3>
             <p>
-              Robust visual representations, context modeling, and lightweight
-              adaptation for downstream vision tasks.
+              Evolutionary algorithms and code language models as semantic genetic
+              operators, applied to model optimization and compiler bug discovery.
             </p>
-            <div class="tags"><span>Deep Learning</span><span>Computer Vision</span></div>
+            <div class="tags"><span>Optimization</span><span>Code LMs</span></div>
           </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="publications">
-      <div class="container">
-        <p class="section-label">03 / PUBLICATIONS</p>
-        <div class="section-heading">
-          <h2>Selected publications</h2>
-          <a class="text-link" href="https://scholar.google.com/" target="_blank" rel="noreferrer">Google Scholar ↗</a>
-        </div>
-
-        <article class="paper">
-          <div class="paper-year">2026</div>
-          <div>
-            <h3>Biology-Guided Context-Aware Residual Propagation for Histology-Guided Spatial Gene Expression Prediction</h3>
-            <p class="authors"><strong>Your Name</strong>, Coauthor, Coauthor</p>
-            <p class="venue">Conference / Journal · Under review</p>
-            <div class="paper-links">
-              <a href="#">Paper</a><a href="#">Code</a><a href="#">Project</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="paper">
-          <div class="paper-year">2026</div>
-          <div>
-            <h3>Unified Fingerprint Recognition and Presentation Attack Detection with a Shared Representation</h3>
-            <p class="authors"><strong>Your Name</strong>, Coauthor, Coauthor</p>
-            <p class="venue">IEEE Signal Processing Letters</p>
-            <div class="paper-links">
-              <a href="#">Paper</a><a href="#">Code</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="paper">
-          <div class="paper-year">2025</div>
-          <div>
-            <h3>Your Previous Research Paper Title</h3>
-            <p class="authors"><strong>Your Name</strong>, Coauthor, Coauthor</p>
-            <p class="venue">Conference / Journal</p>
-            <div class="paper-links">
-              <a href="#">Paper</a><a href="#">Code</a>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="alt-section" id="projects">
-      <div class="container">
-        <p class="section-label">04 / PROJECTS</p>
-        <div class="section-heading">
-          <h2>Selected projects</h2>
-          <a class="text-link" href="https://github.com/AnVuVa" target="_blank" rel="noreferrer">All GitHub projects ↗</a>
-        </div>
-        <div class="project-grid">
-          <article class="project-card">
-            <div class="project-top"><span>AI / MEDICAL</span><span>2026</span></div>
-            <h3>BCARP</h3>
-            <p>Biology-guided context-aware residual propagation for spatial gene expression prediction.</p>
-            <!-- <a href="https://github.com/AnVuVa/BCARP" target="_blank" rel="noreferrer">View repository →</a> -->
-          </article>
-          <article class="project-card">
-            <div class="project-top"><span>BIOMETRICS</span><span>2026</span></div>
-            <h3>Unified PAD + Recognition</h3>
-            <p>A single-backbone framework for fingerprint identity matching and presentation attack detection.</p>
-            <!-- <a href="https://github.com/AnVuVa" target="_blank" rel="noreferrer">View project →</a> -->
-          </article>
-          <!-- <article class="project-card">
-            <div class="project-top"><span>3D VISION</span><span>2026</span></div>
-            <h3>Endoscopic 3D Reconstruction</h3>
-            <p>Experiments on dynamic and deformable scenes using neural rendering and Gaussian splatting.</p>
-            <a href="https://github.com/AnVuVa" target="_blank" rel="noreferrer">View project →</a>
-          </article> -->
-        </div>
-      </div>
-    </section>
-
-    <section id="news">
-      <div class="container section-grid">
-        <div>
-          <p class="section-label">05 / NEWS</p>
-          <h2>Recent updates</h2>
-        </div>
-        <div class="timeline">
-          <div class="timeline-item"><time>2026.09</time><p>Working on new experiments for spatial transcriptomics benchmarking.</p></div>
-          <div class="timeline-item"><time>2026.08</time><p>Developing a unified fingerprint recognition and PAD pipeline.</p></div>
-          <div class="timeline-item"><time>2026.06</time><p>Started experiments on dynamic endoscopic 3D reconstruction.</p></div>
         </div>
       </div>
     </section>
@@ -222,25 +104,43 @@
     <section class="dark-section" id="cv">
       <div class="container cv-section">
         <div>
-          <p class="section-label">06 / CURRICULUM VITAE</p>
+          <p class="section-label">CURRICULUM VITAE</p>
           <h2>Interested in working together?</h2>
           <p>For a detailed overview of my research, publications, and experience, see my CV.</p>
         </div>
-        <a class="button light" href="assets/CV.pdf">Download CV ↗</a>
+        <a class="button light" href="assets/VuVanAn_CV%20(3).pdf" target="_blank" rel="noreferrer">Download CV ↗</a>
       </div>
     </section>
 
     <section id="contact">
       <div class="container contact">
-        <p class="section-label">07 / CONTACT</p>
+        <p class="section-label">CONTACT</p>
         <h2>Let's connect.</h2>
         <p>For research collaboration, academic discussion, or project inquiries:</p>
-        <a class="email" href="mailto:an.vuvan866@gmail.com">an.vuvan866@gmail.com/a>
+        <a class="email" href="mailto:an.vuvan866@gmail.com">an.vuvan866@gmail.com</a>
         <div class="socials large">
           <a href="https://github.com/AnVuVa" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="https://scholar.google.com/" target="_blank" rel="noreferrer">Google Scholar</a>
-          <a href="#">LinkedIn</a>
-          <a href="#">ORCID</a>
+          <a href="https://www.linkedin.com/in/anvuva" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://orcid.org/0009-0004-4899-5892" target="_blank" rel="noreferrer">ORCID</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="news">
+      <div class="container section-grid">
+        <h2>Recent updates</h2>
+        <div class="timeline">
+          <div class="timeline-item"><time>2026.08</time><p>Submitted "Biology-Guided Local-Global Residual Propagation for Spatial Gene Expression Prediction from Histology," with Nguyen Duy Long, Ho Viet Duc Luong, and Nguyen P. Binh, for review.</p></div>
+          <div class="timeline-item"><time>2026.08</time><p>Won Third Place at Viettel AI Race 2026 as Hibiscus Company, reconstructing a BTS tower digital twin from drone imagery with 3D Gaussian Splatting and raising the baseline score from 72 to 77.</p></div>
+          <div class="timeline-item"><time>2026.06</time><p>Won Second Place at SCIC Q2 2026 with MalEvo, a static malware analysis tool built with BDB Security that uses graph neural networks to catch zero-day threats and explains each verdict in plain language.</p></div>
+          <div class="timeline-item"><time>2026.05</time><p>Won First Place at HUST's 43rd Student Scientific Research Awards (SVNCKH) for "Compiler Bug Discovery via Multi-Objective Evolution with Code Language Models and Feedback-Driven Self-Repair," with Lang Hong Nguyet Anh, Pham Van An, and Ha Tien Dat; the judging panel recommended the project for the Ministry-level SVNCKH competition.</p></div>
+          <div class="timeline-item"><time>2026.04</time><p>"From Prompts to Pareto Fronts: Using Code LMs as Semantic Genetic Operators for Compiler Bug Discovery," with Lang Hong Nguyet Anh and Ho Viet Duc Luong, accepted as a full paper at GECCO 2026.</p></div>
+          <div class="timeline-item"><time>2026.03</time><p>Won Second Place at SCIC Q1 2026 and Showcase with BAIStudio, a drag-and-drop AI workflow builder with 40+ customizable node types, built with Hibiscus Company.</p></div>
+          <div class="timeline-item"><time>2025.11</time><p>Joined BKAI Lab at Hanoi University of Science and Technology as a Research Assistant, leading lab initiatives in biometric and biotechnological computer vision.</p></div>
+          <div class="timeline-item"><time>2025.06</time><p>Started as a Project Intern at VNPT Cyber Immunity, building and optimizing AI chatbots for flagship enterprise products.</p></div>
+          <div class="timeline-item"><time>2024.10</time><p>Co-founded Hibiscus Co, a software technology startup whose members specialize in artificial intelligence and cyber security.</p></div>
+          <div class="timeline-item"><time>2024.10</time><p>Joined BAILab at National Economics University as an AI Researcher, working on NLP, AI agent architectures, and RAG systems for medical informatics.</p></div>
+          <div class="timeline-item"><time>2024.09</time><p>Began studying Computer Science at Hanoi University of Science and Technology (HUST).</p></div>
         </div>
       </div>
     </section>
@@ -248,18 +148,9 @@
 
   <footer>
     <div class="container footer-wrap">
-      <span>© 2026 Your Name</span>
-      <span>Built with HTML + CSS · Hosted on GitHub Pages</span>
+      <span>© 2026 Vu Van An</span>
+      <span>Built with Luv · Hosted on GitHub Pages</span>
     </div>
   </footer>
-
-  <script>
-    const toggle = document.querySelector('.nav-toggle');
-    const nav = document.querySelector('.nav');
-    toggle.addEventListener('click', () => nav.classList.toggle('open'));
-    document.querySelectorAll('.nav a').forEach(a =>
-      a.addEventListener('click', () => nav.classList.remove('open'))
-    );
-  </script>
 </body>
 </html>
