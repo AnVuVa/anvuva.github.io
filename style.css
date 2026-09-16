@@ -363,6 +363,7 @@ body.lightbox-open { overflow: hidden; }
   border: 1px solid var(--line);
   display: flex;
   flex-direction: column;
+  /* height: fit-content; */
 }
 
 .project-card.award-card h3 { margin: 0 0 4px; }
