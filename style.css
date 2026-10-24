@@ -261,6 +261,13 @@ section { padding: 105px 0; }
 .paper-year { font-weight: 800; color: var(--accent); }
 .authors, .venue { margin: 5px 0; color: #666; }
 .venue { font-size: 14px; }
+.abstract {
+  max-width: 900px;
+  margin: 16px 0 0;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.65;
+}
 
 .paper-links { margin-top: 18px; }
 .paper-links a {
